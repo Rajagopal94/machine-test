@@ -1,13 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Noto Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container-fluid {
+  width: 1360px;
+  max-width: 100%;
+}
+
+/* login */
+
+form.loginBlock {
+  width: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+form.loginBlock h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #3d3d3d;
+}
+
+form.loginBlock p.text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+form.loginBlock .form-wrapper {
+  margin: 32px 0;
+}
+
+.form-wrapper label.form-label {
+}
+
+.form-wrapper input.form-control {
+  font-family: Noto Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #3e3e3e !important;
+  min-height: 48px;
+  padding: 12px 16px;
+  border: 2px solid #3e3e3e;
+  background: #ffffff;
+  border-radius: 0px;
+}
+
+form.loginBlock .form-wrapper .form-group {
+  margin-bottom: 16px;
+}
+.btn.btn-primary {
+  background: #3c3c3c;
+  border: 1px solid #3c3c3c;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  padding: 14px;
+  border-radius: 0;
+  color: #fcfcfc;
+  min-height: 48px;
+  margin-bottom: 32px;
+  transition: all 0.3s ease;
+}
+.btn.btn-primary:hover {
+  background: #3c3c3c;
+  border: 1px solid #3c3c3c;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.lineDivider {
+  position: relative;
+  text-align: center;
+}
+
+.lineDivider span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.03rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 3px 16px;
+  background: #ffffff;
+}
+
+.lineDivider:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 1px);
+  height: 2px;
+  width: 100%;
+  background: #cfcfcf;
+}
+
+.lineDivider {
+  position: relative;
+  text-align: center;
+}
+
+.lineDivider span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.03rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 3px 16px;
+  background: #ffffff;
+}
+
+.lineDivider:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 1px);
+  height: 2px;
+  width: 100%;
+  background: #cfcfcf;
+}
+
+.signOptions {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.signOptions a.roundedBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #3e3e3e;
+  border-radius: 50%;
+}
+
+.signOptions a.roundedBox i {
+  color: #3e3e3e;
+}
+.imageBlock {
+  text-align: center;
+}
+
+.imageBlock img {
+  width: auto;
+  max-width: 100%;
+}
+.alert.alert-danger {
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0;
 }

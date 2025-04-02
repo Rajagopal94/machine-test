@@ -1,0 +1,50 @@
+/* Custom Checkbox Styling */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #3d3d3d;
+}
+
+/* Hide default checkbox */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create custom checkbox */
+.checkmark {
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 0;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+/* Add checkmark when checked */
+.custom-checkbox input:checked + .checkmark {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+/* Checkmark icon */
+.custom-checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
