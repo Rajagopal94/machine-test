@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import CustomCheckbox from "./CheckBox";
+import SocialIcons from "./SocialIcons";
 
 const LoginForm = () => {
   const [username, setUsername] = useState("");
@@ -75,19 +76,11 @@ const LoginForm = () => {
       <div className="lineDivider">
         <span>Or Sign In with</span>
       </div>
-      <div className="signOptions">
-        <a href="#" className="roundedBox">
-          <i className="bi bi-google"></i>
-        </a>
-        <a href="#" className="roundedBox">
-          <i className="bi bi-facebook"></i>
-        </a>
-        <a href="#" className="roundedBox">
-          <i className="bi bi-linkedin"></i>{" "}
-        </a>
-        <a href="#" className="roundedBox">
-          <i className="bi bi-twitter-x"></i>
-        </a>
+      <div className="social">
+        <SocialIcons iconClass="bi-google" />
+        <SocialIcons iconClass="bi-facebook" />
+        <SocialIcons iconClass="bi-linkedin" />
+        <SocialIcons iconClass="bi-twitter-x" />
       </div>
     </Form>
   );

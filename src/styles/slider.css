@@ -1,0 +1,128 @@
+.image-slider {
+  background: #f0f0f0;
+  border: 2px solid #3d3d3d;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image-slider .imgBlock {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.image-slider .imgBlock img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background: transparent;
+  border: none;
+  bottom: 16px !important;
+  top: unset !important;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  display: none;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+  font-size: 32px;
+  color: #000;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: calc(50% - 200px) !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: calc(50% - 200px) !important;
+}
+
+.swiper-pagination-bullet {
+  background: #fef7ff !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #1d1b20 !important;
+}
+
+/* media query */
+
+@media (max-width: 992px) {
+  .image-slider .imgBlock img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .image-slider {
+    padding: 40px 16px;
+  }
+
+  .image-slider .imgBlock {
+    padding: 40px 0;
+  }
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0 !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    bottom: 30px !important;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: calc(50% - 100px) !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: calc(50% - 100px) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-slider {
+    padding: 16px;
+  }
+
+  .image-slider .imgBlock img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .image-slider .imgBlock {
+    padding: 0px 0 32px;
+  }
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -6px !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    bottom: 0 !important;
+  }
+}
